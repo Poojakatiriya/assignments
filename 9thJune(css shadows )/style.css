@@ -1,0 +1,66 @@
+  body {
+      
+      background-color: #a0dcec;
+      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+
+.profile-card{
+      width: 300px;                                
+      background-color: #ffffff;                   
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);   
+      padding: 25px 20px;
+      text-align: center;
+      margin: 60px auto;
+    }
+
+    .profile-card img{
+         width: 120px;
+      height: 120px;
+      border-radius: 50%;                          
+      object-fit: cover;
+      border: 4px solid #687594;                   
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);     
+      margin-bottom: 15px;
+    }
+
+     .profile-card h2 {
+      font-family: 'Trebuchet MS', serif;
+      font-size: 20px;
+      font-weight: bold;                           
+      text-transform: uppercase;                  
+      color: #333;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);  
+      margin: 10px 0;
+    }
+
+     .profile-card p {
+      font-size: 14px;
+      font-style: italic;                         
+      line-height: 1.7;                          
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    .profile-card button {
+      background-color: #4b6cb7;
+      color: rgb(0, 0, 0);
+      padding: 10px 25px;
+      border: none;
+      border-radius: 25px;                         
+      font-weight: bold;                           
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);     
+      text-transform: uppercase;
+    }
+
+    /* .profile-card button targets the button normally (default state).
+.profile-card button:hover targets the hover state of that same button — i.e., when the user places the mouse over it. */
+
+    .profile-card button:hover {
+      background-color: #3a57a5;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);   
+    }
+
+
