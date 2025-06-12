@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar</title>
+    <style>
+        body {
+            background-color: #c7ffff;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+        }
+
+        .navbar{
+            background-color: rgb(2, 80, 72);
+            padding: 20px;
+            margin: 30px auto;
+            max-width: 90%;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+      font-weight: bold;
+      color: white;
+      font-size: 24px;
+      letter-spacing: 4px;
+    }
+
+    .nav-items {
+      display: flex;
+      gap: 30px;
+      font-weight: bold;
+      color: white;
+      font-size: 18px;
+    }
+
+    .contact-btn {
+      padding: 5px 20px;
+      background-color: white;
+      color: #066;
+      border-radius: 10px;
+      font-weight: bold;
+      font-size: 18px;
+      border: none;
+      cursor: pointer;
+    }
+
+     .nav1  {
+      justify-content: space-between;
+    }
+
+    .nav1 .nav-items {
+      margin: 0 auto;
+    }
+
+    .nav2 {
+      justify-content: space-between;
+    }
+
+    .nav2 .nav-items {
+      flex: 1;
+    }
+
+    .nav2 .center-btn {
+      margin: 0 20px;
+    }
+
+    .nav3 {
+      justify-content: space-between;
+    }
+
+    .nav3 .logo {
+      margin: 0 auto;
+    }
+    </style>
+</head>
+<body>
+    <!-- FIRST NAVBAR -->
+  <div class="navbar nav1">
+    <div class="logo">B W C</div>
+    <div class="nav-items">
+      <div>HOME</div>
+      <div>ABOUT</div>
+      <div>SERVICES</div>
+    </div>
+    <button class="contact-btn">CONTACT</button>
+  </div>
+
+  <!-- SECOND NAVBAR -->
+  <div class="navbar nav2">
+    <div class="nav-items">
+      <div>HOME</div>
+      <div>ABOUT</div>
+      <div>SERVICES</div>
+    </div>
+    <button class="contact-btn center-btn">CONTACT</button>
+    <div class="logo">B W C</div>
+  </div>
+
+  <!-- THIRD NAVBAR -->
+  <div class="navbar nav3">
+    <div class="nav-items">
+      <div>HOME</div>
+      <div>ABOUT</div>
+      <div>SERVICES</div>
+    </div>
+    <div class="logo">B W C</div>
+    <button class="contact-btn">CONTACT</button>
+  </div>
+    
+</body>
+</html>

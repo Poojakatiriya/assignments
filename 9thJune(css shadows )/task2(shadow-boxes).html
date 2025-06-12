@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow-Boxes</title>
+    <style>
+        
+        .box1 {
+            width: 150px;
+            height: 150px;
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 5px -5px 0px red,
+                10px -10px 0px orange,
+                15px -15px 0px yellow,
+                20px -20px 0px green,
+                25px -25px 0px blue;
+            border: 2px solid blue;
+        }
+
+        .box2 {
+
+            width: 150px;
+            height: 150px;
+            margin-top: 50px;
+            margin-left: 50px;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 0 0 2px blue,
+                0 0 0 6px green,
+                0 0 0 10px yellow,
+                0 0 0 14px orange,
+                0 0 0 18px red;
+            border: 3px solid blue;
+
+        }
+
+      
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 150px);
+            gap: 40px;
+            padding: 40px;
+        }
+
+        .box {
+            width: 150px;
+            height: 150px;
+            background: white;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            font-weight: bold;
+            text-align: center;
+        }
+
+
+        .shadow62 {
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1),
+                0 -3px 8px rgba(0, 0, 0, 0.05);
+        }
+
+
+        .shadow63 {
+            box-shadow: 0 8px 15px rgba(0, 110, 255, 0.1);
+        }
+
+
+        .shadow64 {
+            box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.2);
+        }
+
+
+        .shadow65 {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+
+        .shadow66 {
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .shadow67 {
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="container">
+        <div class="box shadow62">#62</div>
+        <div class="box shadow63">#63</div>
+        <div class="box shadow64">#64</div>
+        <div class="box shadow65">#65</div>
+        <div class="box shadow66">#66</div>
+        <div class="box shadow67">#67</div>
+    </div>
+</body>
+
+</html>
