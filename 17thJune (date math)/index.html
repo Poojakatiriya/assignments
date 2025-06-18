@@ -1,0 +1,105 @@
+<!-- 📐 MATH QUESTIONS (3)
+
+1. **Generate a Random Number Between 1 and 100**  
+   Write a function `getRandom()` that returns a random number between 1 and 100. -->
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <title>Random Number Generator</title>
+</head>
+<body>
+  <h2>Random Number Between 1 and 100:</h2>
+  <p id="random-number"></p>
+
+  <script>
+    // Function to generate a random number between 1 and 100
+    function getRandom() {
+      return Math.floor(Math.random() * 100) + 1;
+    }
+
+    window.onload = function() {
+      const result = getRandom();
+      console.log("Random Number:", result);
+      document.getElementById("random-number").textContent = result;
+    };
+  </script>
+</body>
+</html> -->
+
+<!-- 2. **Find Square Root of Any Number**  
+   Write a function `getSqrt(num)` that returns the square root of a number using `Math.sqrt()`. -->
+
+   <!-- <!DOCTYPE html>
+<html>
+<head>
+  <title>Square Root Finder</title>
+</head>
+<body>
+  <h2>Square Root of a Number</h2>
+  <p id="sqrt-result"></p>
+
+  <script>
+    function getSqrt(num) {
+      return Math.sqrt(num);
+    }
+
+    window.onload = function() {
+      const number = 8; 
+      const result = getSqrt(number);
+
+      console.log("Square root of", number, "is:", result);
+
+      document.getElementById("sqrt-result").textContent =
+        `Square root of ${number} is: ${result}`;
+    };
+  </script>
+</body>
+</html> -->
+
+<!-- 3. **Round Up, Down, and to Nearest**  
+   Given a number, display all 3 values:  
+   `Math.floor()`, `Math.ceil()`, and `Math.round()`  
+   Example: Input → 4.7 → Output → 4, 5, 5 -->
+
+   <!-- <!DOCTYPE html>
+<html>
+<head>
+  <title>Math Rounding</title>
+</head>
+<body>
+  <h2>Rounding Results</h2>
+  <p id="floor-result"></p>
+  <p id="ceil-result"></p>
+  <p id="round-result"></p>
+
+  <script>
+    
+    function showRounding(num) {
+      return {
+        floor: Math.floor(num),
+        ceil: Math.ceil(num),
+        round: Math.round(num)
+      };
+    }
+
+    window.onload = function() {
+      const number = 4.7; 
+      const result = showRounding(number);
+
+      console.log("Original:", number);
+      console.log("Math.floor():", result.floor);
+      console.log("Math.ceil():", result.ceil);
+      console.log("Math.round():", result.round);
+
+      document.getElementById("floor-result").textContent = `Math.floor(${number}) = ${result.floor}`;
+      document.getElementById("ceil-result").textContent = `Math.ceil(${number}) = ${result.ceil}`;
+      document.getElementById("round-result").textContent = `Math.round(${number}) = ${result.round}`;
+    };
+  </script>
+</body>
+</html> -->
+
+
+

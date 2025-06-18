@@ -1,0 +1,164 @@
+<!-- 🕒 DATE QUESTIONS (3)
+
+1. **Display Current Date and Time**  
+   Show the current date and time using `new Date()` in a `<div>`. -->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <title>Current Date and Time</title>
+</head>
+<body>
+  <h2>Current Date and Time:</h2>
+  <div id="datetime"></div>
+
+  <script>
+    function getCurrentDateTime() {
+      return new Date().toString();
+    }
+
+    window.onload = function() {
+      const now = getCurrentDateTime();
+
+      console.log("Current Date & Time:", now);
+
+      document.getElementById("datetime").textContent = now;
+    };
+  </script>
+</body>
+</html> -->
+
+
+<!-- 2. **Show Only Current Year**  
+   Extract and display the current year using `getFullYear()`. -->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <title>Current Year</title>
+</head>
+<body>
+  <h2>Current Year:</h2>
+  <div id="year"></div>
+
+  <script>
+   
+    function getCurrentYear() {
+      const today = new Date();
+      return today.getFullYear();
+    }
+
+    
+    window.onload = function() {
+      const year = getCurrentYear();
+
+      
+      console.log("Current Year:", year);
+      document.getElementById("year").textContent = year;
+    };
+  </script>
+</body>
+</html> -->
+
+<!-- 3. **Calculate Days Left in the Year**  
+   Write a function to calculate how many days are left until Dec 31 of the current year. -->
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <title>Days Left in the Year</title>
+</head>
+<body>
+  <h2>Days Left Until December 31:</h2>
+  <div id="days-left"></div>
+
+  <script>
+    function getDaysLeftInYear() {
+      const today = new Date();
+      const year = today.getFullYear();
+      const endOfYear = new Date(year, 11, 31); // Month is 0-indexed: 11 = December
+      const msInOneDay = 1000 * 60 * 60 * 24;
+
+    
+      const diffMs = endOfYear - today;
+
+      return Math.floor(diffMs / msInOneDay);
+    }
+
+    window.onload = function() {
+      const daysLeft = getDaysLeftInYear();
+      console.log("Days left in the year:", daysLeft);
+
+      document.getElementById("days-left").textContent = daysLeft + " day(s)";
+    };
+  </script>
+</body>
+</html> -->
+
+<!-- ⏱️ TIMERS (2)
+
+1. **Countdown Timer (Fixed 5 Seconds)**  
+   Create a countdown that prints numbers from 5 to 1 in the console using `setInterval`, then prints “Time’s up!”. -->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <title>5 Second Countdown</title>
+</head>
+<body>
+  <h2>Open the Console to See the Countdown</h2>
+
+  <script>
+    function startCountdown() {
+      let count = 5;
+
+      const intervalId = setInterval(function () {
+        console.log(count);
+        count--;
+
+        if (count === 0) {
+          console.log("Time’s up!");
+          clearInterval(intervalId);
+        }
+      }, 1000);
+    }
+
+    window.onload = startCountdown;
+  </script>
+</body>
+</html> -->
+
+<!-- 2. **Delayed Welcome Message**  
+   Use `setTimeout` to show a welcome message in the DOM after 2 seconds. -->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <title>Delayed Welcome</title>
+</head>
+<body>
+  <h2>Wait for 2 seconds...</h2>
+  <div id="welcome"></div>
+
+  <script>
+    function showWelcomeMessage() {
+      
+      setTimeout(function() {
+        const message = "Welcome to the site!";
+        console.log(message); 
+        document.getElementById("welcome").textContent = message; 
+      }, 2000);
+    }
+    window.onload = showWelcomeMessage;
+  </script>
+</body>
+</html> -->
+
+<!-- 🧪 DOM PRACTICAL (3)
+
+1. **Display Hello World using `innerText`**  
+   Write JS that sets the text of a `<p>` tag to "Hello World". -->
+
+
+
