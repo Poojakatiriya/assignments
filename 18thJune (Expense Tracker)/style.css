@@ -1,0 +1,66 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 2rem;
+  background: #f9f9f9;
+}
+
+h1 {
+  text-align: center;
+}
+
+main {
+  max-width: 500px;
+  margin: auto;
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+header {
+  background: #373cc0;
+  color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+form div {
+  margin-bottom: 1rem;
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+form input, form button {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+form button {
+  background: #373cc0;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+ul#transactionList {
+  list-style: none;
+  padding: 0;
+}
+
+ul#transactionList li {
+  background: #eee;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+
+
+
