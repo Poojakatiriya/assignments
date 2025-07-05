@@ -184,7 +184,7 @@ h1 {
   background-color: #f1e9ff;
 }
 
-/* === Empty State === */
+
 .empty {
   text-align: center;
   color: #777;
@@ -192,7 +192,7 @@ h1 {
   margin-top: 20px;
 }
 
-/* === Responsive === */
+
 @media (max-width: 600px) {
   .app {
     padding: 20px 16px;
