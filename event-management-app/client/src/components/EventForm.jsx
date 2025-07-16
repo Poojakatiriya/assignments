@@ -17,10 +17,13 @@ const EventForm = () => {
     e.preventDefault();
 
     try {
-      const token = localStorage.getItem("token");
+      // const token = localStorage.getItem("token");
       const res = await api.post("/events/create", form, {
-        headers: { Authorization: `Bearer ${token}` },
+        // headers: { Authorization: `Bearer ${token}` },
       });
+
+      console.log(res)
+
 
       alert("✅ Event Created Successfully!");
       setForm({ title: "", description: "", date: "", location: "" });

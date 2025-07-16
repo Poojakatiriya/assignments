@@ -14,9 +14,6 @@ function App() {
       <hr />
       <EventList />
 
-      <footer className="text-center text-muted mt-5">
-        Built with React + Express + MongoDB + Bootstrap 🚀
-      </footer>
     </div>
   );
 }

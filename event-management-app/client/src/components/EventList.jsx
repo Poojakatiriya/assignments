@@ -29,7 +29,7 @@ const EventList = () => {
 
   useEffect(() => {
     fetchEvents();
-  }, []);
+  }, [events]);
 
   return (
     <div className="row mt-4">
